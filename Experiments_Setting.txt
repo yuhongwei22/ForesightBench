@@ -1,0 +1,18 @@
+主实验：Challenges of the Proposed ForesightBench Dataset
+模型： Pi0.5，PUMA，vlavt, wam(某个), xxx, xxx
+Method OD1 OD2 SD1 Sd2 PD1 PD2 Average
+
+图：专家轨迹展示图
+
+实验二：OD 运动历史是否有用
+WAM模型输入为视频，输入视频长度消融
+1. WAM 模型，输入的训练设置不一样，0.5s, 1s, 1.5s, 对于成功率是否有帮助
+2. 模型训练设置一样，比较只看当前画面与看一段运动历史的差异
+
+实验三：SD 随机位置
+
+实验四：PD
+
+视频输入和单帧输入的差异
+
+消融
