@@ -1,0 +1,6060 @@
+{
+  "task": "SD1_easy",
+  "episode_index": 0,
+  "seed": 6434453555235815254,
+  "original_index": 26,
+  "scene_mapping_source": "/cpfs01/shenyq/repo/starVLA_domino_qwen3_ablation/examples/simBenchmarks/DOMINO/eval_files/sd1_v2_full100_manifest.json",
+  "scene_spec": {
+    "name": "easy_6434453555235815254",
+    "seed": 6434453555235815254,
+    "original_index": 26,
+    "case": {
+      "yellow_high": 0.16883707770224443,
+      "yellow_static_friction": 0.18,
+      "yellow_dynamic_friction": 0.12,
+      "yellow_restitution": 0.015,
+      "yellow_rise": 0.06598549152744994,
+      "yellow_length": 0.20291265605771824,
+      "grey_exit_above_yellow": 0.04666727807015458,
+      "grey_rise": 0.055,
+      "ball_x": -0.22049073116322582,
+      "ball_y": -0.135,
+      "ball_clearance": 0.06186216736520876,
+      "plate_x": 0.3186327303624552,
+      "plate_y": -0.135,
+      "gap": 0.027,
+      "yaw": 0.0,
+      "ramp_y_shift": 0.0
+    },
+    "parking": [
+      0.12720341907697866,
+      -0.135,
+      0.0
+    ],
+    "source_parameters": {
+      "index": 26,
+      "seed": 6434453555235815254,
+      "parameter_status": "easy_candidate_needs_physics_and_robot_validation",
+      "difficulty": "easy",
+      "task_version": "sd_task1_easy_v2",
+      "case": {
+        "yellow_high": 0.16883707770224443,
+        "yellow_static_friction": 0.18,
+        "yellow_dynamic_friction": 0.12,
+        "yellow_restitution": 0.015,
+        "yellow_rise": 0.06598549152744994,
+        "yellow_length": 0.20291265605771824,
+        "yellow_slope_deg": 18.014090218078167,
+        "grey_exit_above_yellow": 0.04666727807015458,
+        "grey_rise": 0.055,
+        "ball_x": -0.22049073116322582,
+        "ball_y": -0.135,
+        "ball_clearance": 0.06186216736520876,
+        "plate_x": 0.3186327303624552,
+        "plate_y": -0.135,
+        "gap": 0.027,
+        "yaw": 0.0,
+        "ramp_y_shift": 0.0
+      },
+      "initial_pose": {
+        "x": 0.12720341907697866,
+        "y": -0.135,
+        "yaw_rad": 0.0,
+        "yaw_deg": 0.0,
+        "geometry_screened": true,
+        "robot_reachability_checked": false
+      },
+      "easy_initialization": {
+        "axis": "x",
+        "lane_y": -0.135,
+        "offset_from_target_m": 0.05874709104811953,
+        "offset_range_m": [
+          0.025,
+          0.065
+        ],
+        "direction_to_target": "negative_x",
+        "source_medium_index": 14885,
+        "source_medium_seed": 8297306367752089083,
+        "source_medium_sha256": "2f4b839308f6455080ae8c87c76f6130a885be72baf347aae6cd3f9bf321d911"
+      },
+      "derived": {
+        "target_x": 0.06845632802885912,
+        "yellow_low": 0.1028515861747945,
+        "medium_parameter_source": "medium_green_long20_v2_15000"
+      }
+    },
+    "physics_240": {
+      "success": true,
+      "geometry": {
+        "accepted": true,
+        "yellow_aabb_xy": [
+          [
+            -0.033,
+            -0.165
+          ],
+          [
+            0.16991265605771824,
+            -0.08000000000000002
+          ]
+        ],
+        "yellow_plate_clearance_m": 0.12272007430473694
+      },
+      "contacts": [
+        "initial_ramp",
+        "ramp_B",
+        "blue_plate"
+      ],
+      "table_contact": false,
+      "stable_s": 0.5,
+      "flight": {
+        "duration_s": 0.1333333333333333,
+        "horizontal_m": 0.1436189126991209,
+        "start": {
+          "t": 0.8708333333333333,
+          "p": [
+            0.1829032599925995,
+            -0.13499441742897034,
+            0.11433590203523636
+          ],
+          "v": [
+            1.0778589248657227,
+            0.00013286825560498983,
+            -0.08234670758247375
+          ]
+        },
+        "end": {
+          "t": 1.0041666666666667,
+          "p": [
+            0.32652217149734497,
+            -0.13497589528560638,
+            0.01600000262260437
+          ],
+          "v": [
+            1.1292322874069214,
+            1.0613344784360379e-05,
+            -4.5177031893217645e-08
+          ]
+        }
+      },
+      "landing": [
+        0.32652217149734497,
+        -0.13497589528560638,
+        0.01600000262260437
+      ],
+      "final_position": [
+        0.3286327123641968,
+        -0.13497589528560638,
+        0.01600000075995922
+      ],
+      "grey_exit_speed_m_s": 0.6099364757537842,
+      "yellow_exit_speed_m_s": 1.0781735181808472,
+      "yellow_max_displacement_m": 1.8698136727834935e-06,
+      "trace": null
+    },
+    "secondary_verification": "disabled",
+    "difficulty": "easy",
+    "medium_reference_index": 26,
+    "easy_initialization": {
+      "sampling_seed": 6434453555235815254,
+      "axis": "x",
+      "lane_y": -0.135,
+      "yaw_rad": 0.0,
+      "offset_from_target_m": 0.05874709104811953,
+      "offset_range_m": [
+        0.025,
+        0.065
+      ],
+      "direction_to_target": "negative_x",
+      "geometry_trials": 1,
+      "medium_spec_sha256": "55ed65e88211f24cc62c3d08466b635c01f439b93c7999ea860763b523f2f42e",
+      "robot_verified": false
+    },
+    "expert_motion_profile": "original"
+  },
+  "instruction": "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled.",
+  "ok": true,
+  "policy_success": true,
+  "policy_fail": false,
+  "steps": 198,
+  "official_outcome": {
+    "success": true,
+    "score": 100.0,
+    "robot_ball_contact": false,
+    "yellow_contact": true,
+    "yellow_departed": true,
+    "caught_s": 0.20000001043081284,
+    "collision_events": 0,
+    "landing_error_m": 0.011959803328417234,
+    "landing_factor": 1.0,
+    "collision_factor": 1.0,
+    "quality_score": 100.0,
+    "rule_version": "sd_catch_v2_no_landing_penalty"
+  },
+  "official_score": 100.0,
+  "policy_error": null,
+  "elapsed_s": 117.71607804298401,
+  "controller_30hz_used": true,
+  "controller_physics_steps": 1579,
+  "runtime_sources": {
+    "/cpfs01/zijian.pan/eval_30hz/run_eval.py": "0e06bf73e0cfefc49fb86011440ab65a8cf0bdc335da33f57b943c51953aa73c",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/评测环境/envs/foresight_sd_single_yellow_eval.py": "43291269219265acb3303c226ef9aa03975094b706f27ab2814d9df06d46cd10",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/评测环境/envs/sd1_policy_interaction.py": "6c2bcf44e5badb147dc08f5227e2364aa90bd6208d4682c6acef25df5694fc43",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/评测环境/envs/sd_catch_success.py": "a0884f932dc55f7879edce6d8f37a00c4b7d962dd8c797421f84614ead6e4770",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/任务代码/tools/wide_pose_robot.py": "750c6575b2a63dc3d063d5d3caacade4b03bf6cea0ba85d8838472a56934630e",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/任务代码/tools/parameter_robot.py": "a282adee22ed5bad7f8889719738be5588281031b4622cdeefdc9bc2fa33ef4e",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/任务代码/tools/run_single_yellow.py": "4138cc010fade789e9bc2f99dd23632f5bb0b13d0459457e4be4c52d468cccfe",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/任务代码/tools/robot_geometry_probe.py": "54fa0f2d2ad3ba17a5d06614f8955edd297048fd8d3fff691a05a5b877132da5",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/评测环境/envs/foresight_ramp_block_ball_catch_right_v1.py": "979a5b91ec6210fd8bbed7a272fd572b5c81642bee2e54dc38512d44cea89c44",
+    "/cpfs01/zijian.pan/domino_workspace/SD_task1_easy_训练测试配置/评测环境/envs/_base_task.py": "3a915e0b42e954d4ad9cc37d0c348f75b1b196f8bf7850da0e1c56128398233f",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/site-packages/gymnasium/core.py": "68b897c9545ce7da1e8a24a4ec2020cdcfe94786df840ff98e1dd11b2b4c9bac",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/typing.py": "eff3df4f1d65e13d690b8f427cada4dd3b88431dd1e7f319fda1bd0062113203"
+  },
+  "final_task_state": {
+    "phase": "roll_policy",
+    "released": true,
+    "ever_lifted": false,
+    "placed_steps": 156,
+    "ball_t": 1.2750000664964318,
+    "policy_error": null,
+    "policy_ramp_moved": true,
+    "policy_initial_ramp_position": [
+      0.12720341980457306,
+      -0.13500003516674042,
+      0.7400001287460327
+    ],
+    "policy_release_rule": "moved_5mm_table_supported_still_0.65s_v5",
+    "policy_grasp_side": null,
+    "policy_ramp_arms": [
+      "right"
+    ],
+    "_roll_result": {
+      "success": true,
+      "score": 100.0,
+      "robot_ball_contact": false,
+      "yellow_contact": true,
+      "yellow_departed": true,
+      "caught_s": 0.20000001043081284,
+      "collision_events": 0,
+      "landing_error_m": 0.011959803328417234,
+      "landing_factor": 1.0,
+      "collision_factor": 1.0,
+      "quality_score": 100.0,
+      "rule_version": "sd_catch_v2_no_landing_penalty"
+    },
+    "eval_success": true,
+    "eval_fail": false,
+    "step_lim": 1510,
+    "take_action_cnt": 198,
+    "ball_positions": [
+      [
+        0.32863229513168335,
+        -0.14460547268390656,
+        0.7559999823570251
+      ]
+    ],
+    "catch_state": {
+      "yellow_seen": true,
+      "yellow_left": true,
+      "caught_s": 0.20000001043081284,
+      "success": true,
+      "robot_ball": false,
+      "events": 0,
+      "previous_pairs": [],
+      "landing": [
+        0.32472196221351624,
+        -0.12470640242099762
+      ]
+    },
+    "ramp_position": [
+      0.054374195635318756,
+      -0.14112630486488342,
+      0.7400001287460327
+    ],
+    "ramp_on_table": true,
+    "stable_elapsed_s": 0.6500000339001417
+  },
+  "controller_actions": 198,
+  "action_budget": 1510,
+  "action_budget_details": {
+    "rule": "twice_max_test_expert_frames",
+    "test_episode_count": 100,
+    "test_mean_frames": 709.27,
+    "test_max_frames": 755,
+    "max_length_episode_indices": [
+      37
+    ],
+    "multiplier": 2,
+    "calibrated_default": 1510,
+    "effective_steps": 1510,
+    "explicitly_overridden": true,
+    "metadata_path": "/cpfs01/zijian.pan/data_100_100_v3/SD1_easy/test_data/meta/episodes.jsonl",
+    "metadata_sha256": "0276998a38e3ab960ba7f499f025d562a9759240f9041a7065c007c7d25698a1"
+  },
+  "dataset_root": "/cpfs01/zijian.pan/data_100_100_v3",
+  "termination_reason": "success",
+  "input_contract_calls": [
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    }
+  ],
+  "model_server_metadata": [
+    {
+      "action_chunk_size": 1,
+      "preserve_image_resolution": true,
+      "requires_state": true,
+      "ckpt_path": "saved-action-trace-replay-no-inference"
+    }
+  ],
+  "checkpoint": "saved-action-trace-replay-no-inference",
+  "action_executor": "fixed_30hz_joint_interpolation",
+  "execution_version": "eval_30hz_v2_diagnostics",
+  "policy_hz": 30,
+  "control_hz": 30,
+  "video_fps": 30,
+  "prompt_actual_calls": [
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ],
+    [
+      "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled."
+    ]
+  ],
+  "prompt_all_calls_match": true,
+  "actual_instruction": "Set the yellow ramp in an appropriate position on the table and keep it steady so the ball crosses the yellow slope and lands in the blue plate. The ball will be released automatically once the ramp has settled.",
+  "language_group": "unseen",
+  "prompt_number": 5,
+  "controller_sha256": "cbc0338ab76711527128e36f7f9ca05e714678b03577b1fb7e65ae705db5dc45"
+}

@@ -1,0 +1,31 @@
+{
+  "source_episode": "/cpfs01/shenyq/repo/RoboICL-foresight/results/full18_gpt6_astra_fewshot_20261111/selected_trajectories_20261113/SD2_easy/round1/SD2_easy/episode_000",
+  "task": "SD2_easy",
+  "episode_index": 0,
+  "recovered_actions": [
+    {
+      "action_index": 171,
+      "decision_step": 165,
+      "chunk_offset": 5,
+      "source": "/cpfs01/shenyq/repo/RoboICL-foresight/results/full18_gpt6_astra_fewshot_20261111/selected_trajectories_20261113/SD2_easy/round1/astra/1995038ed2634f0a95b1c83e31a5ce52/decisions.jsonl",
+      "target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.8095999956130981,
+        1.565000057220459,
+        1.5334999561309814,
+        -1.5392999649047852,
+        0.0,
+        1.5456000566482544,
+        1.0
+      ]
+    }
+  ],
+  "source_report_sha256": "9ae9e87afa19a08f32ee07be5ed6eef017365db8b861723ce166662773024af5",
+  "source_action_trace_sha256": "6b2441e9a496783f36b70b0e71ad2577c07bdb70451fc95a77ef05c3e68ac172"
+}

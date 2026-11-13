@@ -1,0 +1,7 @@
+{
+  "compared_frames": 147,
+  "mean_absolute_rgb_error": 1.376087815334467,
+  "maximum_frame_mean_absolute_rgb_error": 1.4973480902777778,
+  "scale": "0..255",
+  "note": "Diagnostic only: original OIDN and replay OptiX denoising can differ."
+}

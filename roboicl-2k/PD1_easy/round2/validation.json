@@ -1,0 +1,15 @@
+{
+  "actions": 324,
+  "logged_actions": 324,
+  "recovered_terminal_actions": 0,
+  "max_observed_joint_error": 0.0,
+  "tolerance": 1e-05,
+  "report_mismatches": [],
+  "passed": true,
+  "source_success": true,
+  "replay_success": true,
+  "source_steps": 324,
+  "replay_steps": 324,
+  "collection_seconds": 207.81213715486228,
+  "pose_cache_source": "/cpfs01/shenyq/repo/RoboICL-foresight/results/replay_2k_20261113/PD1_easy/round2.cache_1794569957498203154"
+}

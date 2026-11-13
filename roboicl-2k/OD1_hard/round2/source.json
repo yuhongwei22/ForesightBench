@@ -1,0 +1,8 @@
+{
+  "source_episode": "/cpfs01/shenyq/repo/RoboICL-foresight/results/full18_gpt6_astra_fewshot_20261111/selected_trajectories_20261113/OD1_hard/round2/OD1_hard/episode_000",
+  "task": "OD1_hard",
+  "episode_index": 0,
+  "recovered_actions": [],
+  "source_report_sha256": "ad2fd964e6fee9af7cccd39143d7bf454e169d3ee262eb918644cf46c0065839",
+  "source_action_trace_sha256": "fecfe2a36bbca92fccc32b5cc49e02c7925b7f326be175163cc737fe15de5beb"
+}

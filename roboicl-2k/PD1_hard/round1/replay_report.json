@@ -1,0 +1,6218 @@
+{
+  "task": "PD1_hard",
+  "episode_index": 0,
+  "fixed_v2_runtime_seed": 0,
+  "instruction": "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically.",
+  "ok": true,
+  "policy_success": false,
+  "steps": 197,
+  "phase": "setup",
+  "official_metrics": {
+    "phase": "setup",
+    "order": [],
+    "parameters": {
+      "difficulty": "hard",
+      "cube_count": 5,
+      "cube_mass_kg": 0.1,
+      "cube_side_m": 0.045872404657998925,
+      "table_dynamic_friction": 0.007421595525906176,
+      "common_bottom_static_friction": 0.08,
+      "normal_bottom_dynamic_friction": 0.0253159367708085,
+      "abnormal_bottom_dynamic_friction": 0.05757507095054865,
+      "common_side_static_friction": 0.6,
+      "common_side_dynamic_friction": 0.45,
+      "target_release_speed_m_s": 0.18,
+      "linear_damping": 0.0,
+      "angular_damping": 0.0,
+      "timestep_s": 0.004000000189989805,
+      "red_bounds": [
+        -0.035,
+        0.205,
+        -0.075,
+        0.025
+      ],
+      "cube_sleep_threshold": 1e-08,
+      "table_cube_contact_offset_m": 0.0002,
+      "base_skin_thickness_m": 0.001
+    },
+    "blue_region": true,
+    "retests": [],
+    "observation_source": "simulator_pose_velocity_contacts; not RGB estimation",
+    "physics_model": "native PhysX Coulomb sliding friction; bottom material only; no external force/torque/damping",
+    "initial_xy_m": [
+      [
+        0.14797948538704525,
+        -0.09953565115818139
+      ],
+      [
+        0.11831115174075989,
+        -0.2950938011980812
+      ],
+      [
+        0.20757493680090713,
+        -0.35843313178058434
+      ],
+      [
+        0.1780395367876525,
+        -0.23201444275166186
+      ],
+      [
+        0.09187323136126362,
+        -0.1645278788921482
+      ]
+    ],
+    "material_diagnostics_offline": [
+      {
+        "index": 0,
+        "bottom_dynamic_friction": 0.05757507095054865,
+        "bottom_static_friction": 0.08,
+        "mass_kg": 0.10000000149011612,
+        "inertia": [
+          3.5071290767518803e-05,
+          3.5071290767518803e-05,
+          3.5071290767518803e-05
+        ],
+        "side_dynamic_friction": 0.45,
+        "side_static_friction": 0.6
+      },
+      {
+        "index": 1,
+        "bottom_dynamic_friction": 0.0253159367708085,
+        "bottom_static_friction": 0.08,
+        "mass_kg": 0.10000000149011612,
+        "inertia": [
+          3.5071290767518803e-05,
+          3.5071290767518803e-05,
+          3.5071290767518803e-05
+        ],
+        "side_dynamic_friction": 0.45,
+        "side_static_friction": 0.6
+      },
+      {
+        "index": 2,
+        "bottom_dynamic_friction": 0.0253159367708085,
+        "bottom_static_friction": 0.08,
+        "mass_kg": 0.10000000149011612,
+        "inertia": [
+          3.5071290767518803e-05,
+          3.5071290767518803e-05,
+          3.5071290767518803e-05
+        ],
+        "side_dynamic_friction": 0.45,
+        "side_static_friction": 0.6
+      },
+      {
+        "index": 3,
+        "bottom_dynamic_friction": 0.0253159367708085,
+        "bottom_static_friction": 0.08,
+        "mass_kg": 0.10000000149011612,
+        "inertia": [
+          3.5071290767518803e-05,
+          3.5071290767518803e-05,
+          3.5071290767518803e-05
+        ],
+        "side_dynamic_friction": 0.45,
+        "side_static_friction": 0.6
+      },
+      {
+        "index": 4,
+        "bottom_dynamic_friction": 0.05757507095054865,
+        "bottom_static_friction": 0.08,
+        "mass_kg": 0.10000000149011612,
+        "inertia": [
+          3.5071290767518803e-05,
+          3.5071290767518803e-05,
+          3.5071290767518803e-05
+        ],
+        "side_dynamic_friction": 0.45,
+        "side_static_friction": 0.6
+      }
+    ],
+    "records": [],
+    "active_trace": [],
+    "planning_log": [],
+    "classifier_input": [],
+    "decision": null,
+    "validation": {
+      "success": false,
+      "policy_score_factor": 0.0,
+      "policy_score": 0.0,
+      "policy_penalties": [
+        {
+          "index": 0,
+          "reason": "target_boundary",
+          "factor": 0.0
+        },
+        {
+          "index": 4,
+          "reason": "target_boundary",
+          "factor": 0.0
+        }
+      ],
+      "dropped": true,
+      "region_states": {
+        "high": [
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          }
+        ],
+        "low": [
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          }
+        ]
+      },
+      "left_arm_unrestricted": true
+    },
+    "collision_events": [],
+    "blue_bounds": [
+      0.225,
+      0.385,
+      -0.075,
+      0.025
+    ],
+    "truth_labels_offline": [
+      "high",
+      "normal",
+      "normal",
+      "normal",
+      "high"
+    ],
+    "body_dynamic_friction_offline": [
+      0.05757507095054865,
+      0.0253159367708085,
+      0.0253159367708085,
+      0.0253159367708085,
+      0.05757507095054865
+    ]
+  },
+  "elapsed_s": 90.37287497520447,
+  "controller_30hz_used": true,
+  "controller_physics_steps": 1637,
+  "runtime_sources": {
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_cube_slide_friction_sort_hard_v1.py": "b7e7ba07f962811d6f1fdd6e9852412ea3a9ca8157cbf3ced94d076c5e15cfe2",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_cube_slide_friction_sort_v1.py": "a0780379025c726275618056cfaade2ee8cd509dfe846c6b248ae22f68c581f3",
+    "/cpfs01/zijian.pan/domino_workspace/envs/_base_task.py": "faeb359d39158e12bc908b89e7645405a2d42d6a5a6defa41dd6c8dafa60ac57",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/site-packages/gymnasium/core.py": "68b897c9545ce7da1e8a24a4ec2020cdcfe94786df840ff98e1dd11b2b4c9bac",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/typing.py": "eff3df4f1d65e13d690b8f427cada4dd3b88431dd1e7f319fda1bd0062113203"
+  },
+  "final_task_state": {
+    "phase": "setup",
+    "validation": {
+      "success": false,
+      "policy_score_factor": 0.0,
+      "policy_score": 0.0,
+      "policy_penalties": [
+        {
+          "index": 0,
+          "reason": "target_boundary",
+          "factor": 0.0
+        },
+        {
+          "index": 4,
+          "reason": "target_boundary",
+          "factor": 0.0
+        }
+      ],
+      "dropped": true,
+      "region_states": {
+        "high": [
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          }
+        ],
+        "low": [
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          },
+          {
+            "member": false,
+            "coverage": 0.0,
+            "touches": false,
+            "factor": 0.0
+          }
+        ]
+      },
+      "left_arm_unrestricted": true
+    },
+    "pd1_score_factor": 0.0,
+    "tool_docked": false,
+    "_policy_dock_dwell_s": 0.0,
+    "eval_success": false,
+    "eval_fail": true,
+    "step_lim": 3502,
+    "take_action_cnt": 197,
+    "cubes_positions": [
+      [
+        0.37489137053489685,
+        0.1925785392522812,
+        0.7136673927307129
+      ],
+      [
+        0.11447028070688248,
+        -0.29710960388183594,
+        0.7629362940788269
+      ],
+      [
+        0.2075747698545456,
+        -0.3584333062171936,
+        0.7629362344741821
+      ],
+      [
+        0.16095665097236633,
+        -0.2982308268547058,
+        0.7629362344741821
+      ],
+      [
+        -0.18768654763698578,
+        -0.2611218988895416,
+        0.7629361748695374
+      ]
+    ]
+  },
+  "controller_actions": 197,
+  "action_budget": 3502,
+  "action_budget_details": {
+    "rule": "twice_max_test_expert_frames",
+    "test_episode_count": 100,
+    "test_mean_frames": 1489.1,
+    "test_max_frames": 1751,
+    "max_length_episode_indices": [
+      83
+    ],
+    "multiplier": 2,
+    "calibrated_default": 3502,
+    "effective_steps": 3502,
+    "explicitly_overridden": true,
+    "metadata_path": "/cpfs01/zijian.pan/data_100_100_v3/PD1_hard/test_data/meta/episodes.jsonl",
+    "metadata_sha256": "9fc0c2e46a6dc132c48af033bdd9ea2c0c47471ca5f3671c8927b10bc15d2163"
+  },
+  "dataset_root": "/cpfs01/zijian.pan/data_100_100_v3",
+  "pd1_tool_docking": null,
+  "pd1_tool_docking_rule": "right_ee_front_region_stationary_0.4s_v3",
+  "termination_reason": "task_failure",
+  "policy_fail": true,
+  "input_contract_calls": [
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    }
+  ],
+  "model_server_metadata": [
+    {
+      "action_chunk_size": 1,
+      "preserve_image_resolution": true,
+      "requires_state": true,
+      "ckpt_path": "saved-action-trace-replay-no-inference"
+    }
+  ],
+  "checkpoint": "saved-action-trace-replay-no-inference",
+  "action_executor": "fixed_30hz_joint_interpolation",
+  "execution_version": "eval_30hz_v2_diagnostics",
+  "policy_hz": 30,
+  "control_hz": 30,
+  "video_fps": 30,
+  "prompt_actual_calls": [
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ],
+    [
+      "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically."
+    ]
+  ],
+  "prompt_all_calls_match": true,
+  "actual_instruction": "Separate the friction outlier cubes by placing higher-friction ones in red and lower-friction ones in blue. Position the pusher in the parking area in front of the robot base and hold it still until it detaches automatically.",
+  "language_group": "unseen",
+  "prompt_number": 5,
+  "controller_sha256": "cbc0338ab76711527128e36f7f9ca05e714678b03577b1fb7e65ae705db5dc45",
+  "final_validation": {
+    "success": false,
+    "policy_score_factor": 0.0,
+    "policy_score": 0.0,
+    "policy_penalties": [
+      {
+        "index": 0,
+        "reason": "target_boundary",
+        "factor": 0.0
+      },
+      {
+        "index": 4,
+        "reason": "target_boundary",
+        "factor": 0.0
+      }
+    ],
+    "dropped": true,
+    "region_states": {
+      "high": [
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        }
+      ],
+      "low": [
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        },
+        {
+          "member": false,
+          "coverage": 0.0,
+          "touches": false,
+          "factor": 0.0
+        }
+      ]
+    },
+    "left_arm_unrestricted": true
+  }
+}

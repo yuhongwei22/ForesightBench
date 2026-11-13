@@ -1,0 +1,4426 @@
+{
+  "task": "OD2_hard",
+  "episode_index": 0,
+  "seed": 101257,
+  "parameters": {
+    "seed": 101257,
+    "L": 0.487,
+    "A": 21.3,
+    "X": 0.045
+  },
+  "instruction": "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area.",
+  "ok": true,
+  "policy_success": false,
+  "policy_fail": true,
+  "steps": 147,
+  "official_audit": {
+    "frozen_case": {
+      "seed": 101257,
+      "L": 0.487,
+      "A": 21.3,
+      "X": 0.045,
+      "original_seed": 101257,
+      "new_seed": 101257
+    },
+    "button_contacts": [],
+    "unsafe_contacts": [
+      {
+        "step": 1220,
+        "names": [
+          "fr_link8",
+          "table"
+        ],
+        "impulse": 2.2661951780319214,
+        "reason": "arm_hit_support_or_table"
+      }
+    ],
+    "left_drift_peak_rad": 6.055166977603221e-06,
+    "release_step": null,
+    "impact_step": null,
+    "first_impact_xyz": null,
+    "whole_ball_within_blue": false,
+    "policy_steps": 147,
+    "physics_steps": 1220,
+    "success": false,
+    "landing_rule": "projected_overlap",
+    "pad_size_m": [
+      0.08,
+      0.09
+    ],
+    "camera_version": "medium_rgb30_full_episode_v1",
+    "first_model_action": [
+      -1.2000000476837158,
+      0.0,
+      1.5,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.019999999552965164,
+      -0.004000000189989805,
+      0.023000000044703484,
+      -0.027000000700354576,
+      -0.01600000075995922,
+      0.0,
+      1.0
+    ],
+    "last_model_action": [
+      -1.2000000476837158,
+      0.0,
+      1.5,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.3799999952316284,
+      2.049999952316284,
+      0.25,
+      1.9600000381469727,
+      0.03999999910593033,
+      0.014999999664723873,
+      1.0
+    ],
+    "right_max_change_rad": 2.049999952316284,
+    "score": 0.0,
+    "failure_reason": "arm_hit_support_or_table",
+    "landing_accepted": false,
+    "evaluation_rules_version": "dual_arm_first_point_binary_v5_blade_touch"
+  },
+  "elapsed_s": 352.1354389190674,
+  "controller_30hz_used": true,
+  "controller_physics_steps": 1220,
+  "runtime_sources": {
+    "/cpfs01/zijian.pan/eval_30hz/run_eval.py": "0e06bf73e0cfefc49fb86011440ab65a8cf0bdc335da33f57b943c51953aa73c",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_knife_hard_v1.py": "ad409e2d7bc12cfefba0af210235f159656f8b16e3d44ed146b34f66d52b9857",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_knife_medium_v1.py": "b0fe103c8866fced046002cee92c9dae354f4b0856086ed0cc2682f721c5b106",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_button_easy_v1.py": "0b985259d4aaec3bef88b3c290abe557ea599e3ceb47cb0f4eaaa6601f8040cb",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_cut_landing_right_v1.py": "032c7e649398215b2738de3e5521bcf9c11f9970e404cf03c48faf89b9d0baa1",
+    "/cpfs01/zijian.pan/domino_workspace/envs/_base_task.py": "faeb359d39158e12bc908b89e7645405a2d42d6a5a6defa41dd6c8dafa60ac57",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/site-packages/gymnasium/core.py": "68b897c9545ce7da1e8a24a4ec2020cdcfe94786df840ff98e1dd11b2b4c9bac",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/typing.py": "eff3df4f1d65e13d690b8f427cada4dd3b88431dd1e7f319fda1bd0062113203"
+  },
+  "final_task_state": {
+    "phase": "scene_preview_only",
+    "eval_success": false,
+    "eval_fail": true,
+    "step_lim": 1072,
+    "take_action_cnt": 147,
+    "ball_positions": [
+      [
+        0.03510119393467903,
+        -0.1899999976158142,
+        0.8618398308753967
+      ]
+    ]
+  },
+  "controller_actions": 147,
+  "action_budget": 1072,
+  "action_budget_details": {
+    "rule": "twice_max_test_expert_frames",
+    "test_episode_count": 100,
+    "test_mean_frames": 502.8,
+    "test_max_frames": 536,
+    "max_length_episode_indices": [
+      92
+    ],
+    "multiplier": 2,
+    "calibrated_default": 1072,
+    "effective_steps": 1072,
+    "explicitly_overridden": false,
+    "metadata_path": "/cpfs01/zijian.pan/data_100_100_v2/OD2_hard/test_data/meta/episodes.jsonl",
+    "metadata_sha256": "0b12e2a85d50313701a8cc8bd0a50ced1a30aa1c4148cb7114e40921c0ffbc4a"
+  },
+  "dataset_root": "/cpfs01/zijian.pan/data_100_100_v2",
+  "termination_reason": "task_failure",
+  "input_contract_calls": [
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    }
+  ],
+  "model_server_metadata": [
+    {
+      "env": "roboicl_foresight_dmx",
+      "ckpt_path": "gpt-6-astra@dmxapi (RoboICL joint bridge)",
+      "action_chunk_size": 1,
+      "requires_state": true,
+      "preserve_image_resolution": true,
+      "model": "gpt-6-astra",
+      "provider": "dmxapi",
+      "action_contract": "absolute joint targets: left6,right6,left_gripper,right_gripper",
+      "replan_interval_control_steps": 15
+    }
+  ],
+  "checkpoint": "gpt-6-astra@dmxapi (RoboICL joint bridge)",
+  "action_executor": "fixed_30hz_joint_interpolation",
+  "execution_version": "eval_30hz_v2_diagnostics",
+  "policy_hz": 30,
+  "control_hz": 30,
+  "video_fps": 30,
+  "prompt_actual_calls": [
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ],
+    [
+      "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area."
+    ]
+  ],
+  "prompt_all_calls_match": true,
+  "actual_instruction": "Sever the rope with the knife's blade so the ball's landing point is inside the blue target area.",
+  "language_group": "seen",
+  "prompt_number": 3,
+  "controller_sha256": "cbc0338ab76711527128e36f7f9ca05e714678b03577b1fb7e65ae705db5dc45"
+}

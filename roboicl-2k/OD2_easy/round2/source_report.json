@@ -1,0 +1,4627 @@
+{
+  "task": "OD2_easy",
+  "episode_index": 0,
+  "seed": 104210,
+  "parameters": {
+    "seed": 104210,
+    "L": 0.428,
+    "A": 20.9,
+    "X": 0.04
+  },
+  "instruction": "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area.",
+  "ok": true,
+  "policy_success": true,
+  "policy_fail": false,
+  "steps": 154,
+  "official_audit": {
+    "v2_parameters": {
+      "seed": 104210,
+      "L": 0.428,
+      "A": 20.9,
+      "X": 0.04,
+      "original_seed": 104210,
+      "new_seed": 104210
+    },
+    "button_contacts": [
+      {
+        "step": 983,
+        "names": [
+          "fr_link7",
+          "release_button"
+        ],
+        "impulse": 0.7360163927078247
+      }
+    ],
+    "unsafe_contacts": [],
+    "left_drift_peak_rad": 6.055166977603221e-06,
+    "release_step": 983,
+    "impact_step": 1029,
+    "first_impact_xyz": [
+      0.038547515869140625,
+      -0.1899999976158142,
+      0.7580002546310425
+    ],
+    "whole_ball_within_blue": "True",
+    "policy_steps": 154,
+    "physics_steps": 1279,
+    "success": true,
+    "video_fps": 30,
+    "first_model_action": [
+      -1.2000000476837158,
+      0.0,
+      1.5,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.004000000189989805,
+      -0.0010000000474974513,
+      0.004999999888241291,
+      -0.006000000052154064,
+      -0.003000000026077032,
+      0.0,
+      0.0
+    ],
+    "last_model_action": [
+      -1.2000000476837158,
+      0.0,
+      1.5,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.5604000091552734,
+      1.746000051498413,
+      0.20399999618530273,
+      1.5046000480651855,
+      -0.027899999171495438,
+      0.014999999664723873,
+      0.0
+    ],
+    "right_max_change_rad": 1.746000051498413,
+    "landing_accepted": "True",
+    "landing_quality_score": 100.0,
+    "normalized_center_offset": 0.036312103271484396,
+    "landing_rule": "first_impact_point",
+    "score": 100.0,
+    "evaluation_rules_version": "dual_arm_first_point_binary_v4_verified_holder_rope_fingers"
+  },
+  "elapsed_s": 684.6717691421509,
+  "controller_30hz_used": true,
+  "controller_physics_steps": 1279,
+  "runtime_sources": {
+    "/cpfs01/zijian.pan/eval_30hz/run_eval.py": "0e06bf73e0cfefc49fb86011440ab65a8cf0bdc335da33f57b943c51953aa73c",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_button_easy_v1.py": "0b985259d4aaec3bef88b3c290abe557ea599e3ceb47cb0f4eaaa6601f8040cb",
+    "/cpfs01/zijian.pan/domino_workspace/envs/foresight_pendulum_cut_landing_right_v1.py": "032c7e649398215b2738de3e5521bcf9c11f9970e404cf03c48faf89b9d0baa1",
+    "/cpfs01/zijian.pan/domino_workspace/envs/_base_task.py": "faeb359d39158e12bc908b89e7645405a2d42d6a5a6defa41dd6c8dafa60ac57",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/site-packages/gymnasium/core.py": "68b897c9545ce7da1e8a24a4ec2020cdcfe94786df840ff98e1dd11b2b4c9bac",
+    "/cpfs01/shenyq/wam-eval/conda-envs/ivla_domino_eval/lib/python3.11/typing.py": "eff3df4f1d65e13d690b8f427cada4dd3b88431dd1e7f319fda1bd0062113203"
+  },
+  "final_task_state": {
+    "phase": "scene_preview_only",
+    "eval_success": true,
+    "eval_fail": false,
+    "step_lim": 778,
+    "take_action_cnt": 154,
+    "ball_positions": [
+      [
+        0.13756272196769714,
+        -0.1899999976158142,
+        0.7580000162124634
+      ]
+    ]
+  },
+  "controller_actions": 154,
+  "action_budget": 778,
+  "action_budget_details": {
+    "rule": "twice_max_test_expert_frames",
+    "test_episode_count": 100,
+    "test_mean_frames": 356.35,
+    "test_max_frames": 389,
+    "max_length_episode_indices": [
+      43
+    ],
+    "multiplier": 2,
+    "calibrated_default": 778,
+    "effective_steps": 778,
+    "explicitly_overridden": false,
+    "metadata_path": "/cpfs01/zijian.pan/data_100_100_v2/OD2_easy/test_data/meta/episodes.jsonl",
+    "metadata_sha256": "ad588fc4a39cb51255567afd1249b6e289aa6f890dbc7d069a2cd6775de37be5"
+  },
+  "dataset_root": "/cpfs01/zijian.pan/data_100_100_v2",
+  "termination_reason": "success",
+  "input_contract_calls": [
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    },
+    {
+      "unnorm_key": "new_embodiment",
+      "examples": [
+        {
+          "image_count": 3,
+          "image_shapes": [
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ],
+            [
+              240,
+              320,
+              3
+            ]
+          ],
+          "state_present": true
+        }
+      ]
+    }
+  ],
+  "model_server_metadata": [
+    {
+      "env": "roboicl_foresight_dmx",
+      "ckpt_path": "gpt-6-astra@dmxapi (RoboICL joint bridge)",
+      "action_chunk_size": 1,
+      "requires_state": true,
+      "preserve_image_resolution": true,
+      "model": "gpt-6-astra",
+      "provider": "dmxapi",
+      "action_contract": "absolute joint targets: left6,right6,left_gripper,right_gripper",
+      "replan_interval_control_steps": 15
+    }
+  ],
+  "checkpoint": "gpt-6-astra@dmxapi (RoboICL joint bridge)",
+  "action_executor": "fixed_30hz_joint_interpolation",
+  "execution_version": "eval_30hz_v2_diagnostics",
+  "policy_hz": 30,
+  "control_hz": 30,
+  "video_fps": 30,
+  "prompt_actual_calls": [
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ],
+    [
+      "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area."
+    ]
+  ],
+  "prompt_all_calls_match": true,
+  "actual_instruction": "Press the button to release the ball by breaking the rope, with its landing point inside the blue target area.",
+  "language_group": "unseen",
+  "prompt_number": 4,
+  "controller_sha256": "cbc0338ab76711527128e36f7f9ca05e714678b03577b1fb7e65ae705db5dc45"
+}

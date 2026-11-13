@@ -1,0 +1,14 @@
+{
+  "actions": 639,
+  "logged_actions": 639,
+  "recovered_terminal_actions": 0,
+  "max_observed_joint_error": 0.0,
+  "tolerance": 1e-05,
+  "report_mismatches": [],
+  "passed": true,
+  "source_success": true,
+  "replay_success": true,
+  "source_steps": 639,
+  "replay_steps": 639,
+  "collection_seconds": 85.73231730051339
+}

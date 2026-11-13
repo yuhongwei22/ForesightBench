@@ -1,0 +1,15 @@
+{
+  "actions": 76,
+  "logged_actions": 76,
+  "recovered_terminal_actions": 0,
+  "max_observed_joint_error": 0.0,
+  "tolerance": 1e-05,
+  "report_mismatches": [],
+  "passed": true,
+  "source_success": false,
+  "replay_success": false,
+  "source_steps": 76,
+  "replay_steps": 76,
+  "collection_seconds": 116.8223583009094,
+  "pose_cache_source": "/cpfs01/shenyq/repo/RoboICL-foresight/results/replay_2k_20261113/OD1_hard/round1.cache_1794566703057126311"
+}

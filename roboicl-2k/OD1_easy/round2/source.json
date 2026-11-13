@@ -1,0 +1,8 @@
+{
+  "source_episode": "/cpfs01/shenyq/repo/RoboICL-foresight/results/full18_gpt6_astra_fewshot_20261111/selected_trajectories_20261113/OD1_easy/round2/OD1_easy/episode_000",
+  "task": "OD1_easy",
+  "episode_index": 0,
+  "recovered_actions": [],
+  "source_report_sha256": "e60ea9044bf5dde1f2ba8c2bbacf281f12a6a5cd963f41a91295ef8273ea4c5c",
+  "source_action_trace_sha256": "30f8cd01d7a03aaf5b73fd45e386fd5410ca23c33b42bc0534662da2d8fc4544"
+}
