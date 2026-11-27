@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "robot": "dual-arx-x5",
+  "physics_hz": 250,
+  "sampling_hz": 30,
+  "video_resolution": [
+    1280,
+    720
+  ],
+  "native_preview_frames": true,
+  "upscaled": false,
+  "codec": "H264",
+  "crf": 14,
+  "preset": "slow",
+  "reference": "/cpfs01/zijian.pan/OD4_ARX_X5_color2/validation.json",
+  "results": [
+    {
+      "difficulty": "easy",
+      "seed": 2207337,
+      "video": "/cpfs01/zijian.pan3/color_high/OD4_easy_color.mp4",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "frames": 95,
+      "hold_s": 0.5320000000000004,
+      "success": true,
+      "scene_and_appearance_match": true,
+      "global_hue_degrees": 354.9533110910647,
+      "table_hue_degrees": 161.08822822624256,
+      "size_bytes": 326453,
+      "sha256": "8d55f7f23fa6e9b2b64e51fb4cb9979fe26e9f9c9599f80aec0e7006a505ad8d"
+    },
+    {
+      "difficulty": "medium",
+      "seed": 4438249,
+      "video": "/cpfs01/zijian.pan3/color_high/OD4_medium_color.mp4",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "frames": 142,
+      "hold_s": 0.5240000000000004,
+      "success": true,
+      "scene_and_appearance_match": true,
+      "global_hue_degrees": 152.48290081984163,
+      "table_hue_degrees": 1.7764263008796206,
+      "size_bytes": 300891,
+      "sha256": "5a2948247445325d3a42626aa23ac6bd101c2b31507044d60ceaadf1a5ee7047"
+    },
+    {
+      "difficulty": "hard",
+      "seed": 7002474,
+      "video": "/cpfs01/zijian.pan3/color_high/OD4_hard_color.mp4",
+      "resolution": [
+        1280,
+        720
+      ],
+      "fps": 30,
+      "frames": 77,
+      "hold_s": 0.5080000000000003,
+      "success": true,
+      "scene_and_appearance_match": true,
+      "global_hue_degrees": 132.26382211190793,
+      "table_hue_degrees": 286.92704192351454,
+      "size_bytes": 471713,
+      "sha256": "0f66c8bf825746b52f5847ee706598d79303766cd961bc5dce67d1cf68a5a201"
+    }
+  ]
+}
